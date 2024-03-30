@@ -1,0 +1,110 @@
+.login-register-wrapper {
+    &.section-padding {
+        padding: 80px 0;
+    }
+
+    .login-reg-form-wrap {
+        background-color: $color_white_1;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(0, 0 , 0, 0.1);
+        padding: 23px 30px 30px;
+
+        h4 {
+            font-size: $fs_6;
+            font-weight: $fw_700;
+            color: $color_gray_2;
+        }
+
+        .single-input-item {
+            margin-top: 20px;
+
+            label {
+                color: $color_black_1;
+                text-transform: capitalize;
+                font-size: $fs_1;
+            }
+
+            input, textarea {
+                color: $color_gray_2;
+                border: 1px solid #ccc;
+                padding: 12px 10px;
+                width: 100%;
+                font-size: $fs_1;
+                background: #f7f7f7;
+                border-radius: 5px;
+            }
+
+            .remember-meta {
+                .custom-checkbox {
+                    .custom-control-label {
+                        font-size: 14px;
+                        line-height: 1;
+                        padding-left: 10px;
+                        font-weight: $fw_400;
+                        display: block;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                }
+            }
+
+            .btn-sqr {
+                color: $color_white_1;
+                font-size: $fs_2;
+                font-weight: $fw_700;
+                border-radius: 5px;
+                background-color: $color_green_1;
+                padding: 13px 25px;
+                transition: all 0.4s;
+
+                &:hover {
+                    background-color: #282828;
+                    color: $color_green_1;
+                }
+            }
+
+            .login-reg-form-meta {
+                a {
+                    color: $color_green_1;
+                    font-size: 12px;
+                    margin-top: -6px;
+                    transition: all 0.4s;
+                    text-decoration: none;
+                }
+                
+            }
+
+            
+        }
+
+        .check-gender {
+            color: $color_gray_2;
+            padding: 12px 10px;
+            font-size: $fs_1;
+            margin-top: 20px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            
+            h5 {
+                margin-bottom: 0;
+                font-size: $fs_1;
+            }
+        }
+
+        .form-check {
+            color: $color_black_1;
+            text-transform: capitalize;
+            font-size: $fs_1;
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        }
+
+        p {
+            color: $color_green_1;
+            text-transform: capitalize;
+            font-size: $fs_2;
+            padding-top: 20px;
+        }
+    }

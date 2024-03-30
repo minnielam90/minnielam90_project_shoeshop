@@ -1,0 +1,173 @@
+.hero-slider {
+
+    .hero-slider-active {
+
+        .slick-list {
+            
+            .slick-track {
+                position: relative;
+                display: block;
+
+                .hero-slider-item {
+                    height: 730px;
+                    display: flex;
+                    align-items: center;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;   
+                }
+
+                .hero-slider-content {
+                    &.content-top {
+                        margin-top: 100px;
+                    }
+
+                    .slide-title {
+                        font-size: 160px;
+                        font-weight: $fw_900;
+                        line-height: 1;
+                        color: #faec07;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                    &.slide-1 h2 {
+                        animation: fadeInRight 0.8s linear alternate;
+                    }
+
+                    .slide-subtitle {
+                        font-size: 46px;
+                        font-weight: $fw_500;
+                        line-height: 1.1;
+                        color: $color_white_1;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                    &.slide-1 h3 {
+                        animation: fadeInRight 1s linear alternate;
+                    }
+
+                    &.slide-1 a {
+                        animation: slideInUp 1.2s linear alternate;
+                    }
+
+                    .btn-large {
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 1;
+                        color: #fff;
+                        padding: 15px 30px;
+                        background-color: #222222;
+                        border-radius: 50px;
+                        margin-top: 40px;
+
+                        &:hover {
+                            color: $color_white_1;
+                            background-color: $color_green_1;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+
+    .slick-arrow-style {
+        
+        
+
+        button {
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            box-shadow: none;
+            transition: all 0.4s;
+
+            &.slick-prev, &.slick-next {
+                font-size: 0;
+                line-height: 0;
+                position: absolute;
+                top: 50%;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                transform: translate(0, -50%);
+                cursor: pointer;
+                color: transparent;
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+        
+
+            &.slick-arrow {
+                top: 50%;
+                left: 30px;
+                width: 40px;
+                height: 40px;
+                font-size: 25px;
+                border-radius: 50%;
+                color: $color_black_1;
+                background-color: $color_white_1;
+                border: 1px solid $color_border;
+                cursor: pointer;
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-50%);
+                line-height: 42px;
+                transition: all 0.4s;
+
+                i {
+                    display: block;
+                    padding-left: 2px;
+                }
+
+                &.slick-next {
+                    left: auto;
+                    right: 30px;
+                }
+
+                &:hover {
+                    color: $color_white_1;
+                    border-color: $color_green_1;
+                    background-color: $color_green_1;
+                }
+            }
+        }
+        
+        &:hover button.slick-arrow {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+
+    .slick-arrow-style_hero {
+        button {
+            &.slick-arrow {
+                font-size: $fs_6;
+                left: 0;
+                width: 50px;
+                height: 50px;
+                background-color: #f6f6f6;
+                border-radius: 50%;
+                line-height: 50px;
+                z-index: 1;
+
+                &.slick-next {
+                    right: 0;
+                }
+
+                &:hover {
+                    background-color: $color_green_1;
+                    color: $color_white_1;
+
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,398 @@
+.header-area {
+    .main-header {
+        .header-top {
+            padding: 6px 0;
+
+            .top-left-navigation {
+                padding-left: 220px;
+
+                .header-social-link {
+                    a {
+                        color: $color_gray_4;
+                        font-size: $fs_3;
+                        display: inline-block;
+                        line-height: 1;
+                        margin-left: 20px;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            color: $color_green_1;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                &.user-info-block {
+                    margin-left: 40px;
+                    margin-bottom: 0px;
+
+                    li {
+                        display: inline-block;
+                        margin-left: 15px;
+                        list-style: none;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        a {
+                            color: $color_gray_4;
+                            font-size: $fs_1;
+                            text-decoration: none;
+                            transition: all 0.4s;
+                            
+                            &:hover {
+                                color: $color_green_1;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .black-bg {
+            background-color: $color_black_2;
+        }
+
+        .header-main-area {
+            position: relative;
+            z-index: 1;
+
+            .logo {
+                height: 110px;
+                line-height: 110px;
+                margin-top: -39px;
+                padding: 0 15px;
+                background-color: $color_green_1;
+                text-align: center;
+            }
+            
+            .main-menu-area {
+                margin-top: 15px;
+                
+                .main-menu {
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-left: 0;
+                        padding-bottom: 0;
+
+                        li {
+                            position: relative;
+                            list-style: none;
+
+                            &.active a, &:hover a {
+                                color: $color_green_1;
+                            }
+
+                            a {
+                                color: $color_white_1;
+                                font-size: 17px;
+                                padding: 14px 15px;
+                                font-weight: 700;
+                                display: block;
+                                text-transform: uppercase;
+                                text-decoration: none;
+
+                                i {
+                                    font-size: $fs_1;
+                                    padding: 0 3px;
+                                }
+                            }
+                            
+
+                            
+                                ul {
+                                    &.dropdown {
+                                        border-radius: 5px;
+                                        top: 100%;
+                                        left: 0;
+                                        width: 180px;
+                                        position: absolute;
+                                        transition: all 0.4s;
+                                        background-color: $color_white_1;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        z-index: 99999;
+                                        pointer-events: none;
+                                        transform: translateY(20px);
+                                        border: 1px solid $color_gray_3;
+
+                                        li {
+                                            margin-right: 0;
+                                            border-right: none;
+                                            flex-basis: 100%;
+
+                                            a {
+                                                color: $color_gray_2;
+                                                font-size: $fs_1;
+                                                font-weight: 400;
+                                                padding: 10px 20px;
+                                                text-transform: capitalize;
+                                                position: relative;
+                                                border-bottom: 1px dashed $color_border;
+                                                z-index: 1;
+                                            }
+                                        }
+                                    }
+
+                                    &.megamenu {
+                                        width: calc(100% - 30px);
+                                        padding: 30px;
+
+
+                                        li {
+                                            flex-basis: calc(100% / 3);
+
+                                            &.mega-title {
+                                                color: $color_black_1;
+                                                font-size: $fs_2;
+                                                font-weight: $fw_600;
+                                                text-transform: capitalize;
+
+                                                span {
+                                                    position: relative;
+                                                    margin-bottom: 15px;
+                                                    display: inline-block;
+                                                }
+
+                                                ul {
+                                                    li {
+                                                        flex-basis: 100%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:hover ul.megamenu {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: translate(-50%, 0);
+                                }
+
+                                &:hover ul.dropdown {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    pointer-events: visible;
+                                    transform: translate(0);
+                                }
+
+
+                            
+                            
+
+                        }
+                    }
+                }
+            }
+
+            .header-right {
+                
+                .header-configure-area {
+
+                    ul {
+                        &.nav {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 0;
+                            margin-bottom: 0;
+                            list-style: none;
+
+                            li {
+                                font-size: 22px;
+                                display: inline-block;
+                                margin-left: 25px;
+                                line-height: 1;
+
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+
+                                a {
+                                    color: $color_white_1;
+                                    display: block;
+                                    position: relative;
+                                    transition: all 0.4s;
+                                    text-decoration: none;
+
+                                    .notification {
+                                        top: -10px;
+                                        right: -12px;
+                                        position: absolute;
+                                        width: 18px;
+                                        height: 18px;
+                                        text-align: center;
+                                        line-height: 18px;
+                                        font-size: 10px;
+                                        color: $color_white_1;
+                                        border-radius: 50%;
+                                        background-color: $color_green_1;
+                                    }
+
+                                    &:hover {
+                                        color: $color_green_1;
+                                    }
+
+                                    &:hover, &:focus {
+                                        outline: none;
+                                        text-decoration: none;
+                                    }
+                                }
+                                
+                                
+
+                                &.mini-cart-wrap {
+                                    position: relative;
+
+                                    .cart-list-wrapper {
+                                        width: 380px;
+                                        top: 100%;
+                                        right: 0;
+                                        border-radius: 5px;
+                                        background-color: $color_white_1;
+                                        position: absolute;
+                                        padding: 30px 20px;
+                                        z-index: 2;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        transform: translateY(30px);
+                                        transition: all 0.4s;
+                                        box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
+
+                                        .cart-list {
+                                            max-height: 201px;
+                                            overflow-y: auto;
+                                            padding-left: 0;
+
+                                            li {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                margin-left: 0;
+                                                margin-bottom: 20px;
+
+                                                .cart-img {
+                                                    flex: 0 0 90px;
+                                                    max-width: 90px;
+                                                    position: relative;
+                                                    border: 1px solid $color_border;
+
+                                                    img {
+                                                        max-width: 100%;
+                                                        transition: all 0.4s;
+                                                        vertical-align: middle;
+                                                    }
+                                                }
+
+                                                .cart-info {
+                                                    flex: 0 0 calc(100% - 110px);
+                                                    padding-left: 10px;
+                                                    text-align: left;
+
+                                                    .product-name {
+                                                        font-weight: $fw_400;
+                                                        text-transform: uppercase;
+                                                        font-size: $fs_2;
+
+                                                        a {
+                                                            color: $color_black_1;
+                                                        }
+                                                    }
+
+                                                    span {
+                                                        color: $color_green_1;
+                                                        font-size: $fs_1;
+                                                        margin-top: 5px;
+                                                        display: block;
+                                                        line-height: 1.4;
+                                                        font-weight: $fw_600;
+
+                                                        &.cart-qty {
+                                                            font-size: 12px;
+                                                            color: $color_gray_2;
+                                                            font-weight: $fw_400;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                                .del-icon {
+                                                    max-width: 20px;
+                                                    flex: 0 0 20px;
+                                                    font-size: 15px;
+                                                    color: $color_gray_2;
+                                                    text-align: center;
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                        }
+
+                                        .minicart-pricing-box {
+                                            border-bottom: 1px solid $color_border;
+                                            border-top: 1px solid $color_border;
+                                            margin-bottom: 20px;
+                                            padding-top: 15px;
+                                            margin-top: 20px;
+                                            padding-left: 0;
+
+                                            li {
+                                                margin-bottom: 15px;
+                                                margin-left: 0;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                font-size: 22px;
+                                                line-height: 1;
+
+                                                span {
+                                                    font-size: $fs_1;
+                                                    font-weight: $fw_400;
+
+                                                    strong {
+                                                        color: $color_green_1;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .minicart-button {
+                                            a {
+                                            color: $color_white_1;
+                                            font-size: $fs_2;
+                                            display: block;
+                                            font-weight: 700;
+                                            line-height: 1;
+                                            padding: 14px 0;
+                                            background-color: #222222;
+                                            text-align: center;
+                                            margin-bottom: 10px;
+
+                                            &:hover {
+                                                color: $color_green_1;
+                                            }
+                                            }
+
+                                        
+                                        }
+                                        
+                                    }
+
+                                    &:hover .cart-list-wrapper {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        transform: translateY(17px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .black-soft {
+            background-color: #282828;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.reg-banner {
+    &.reg-img {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.bg-img {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .reg-wrap {
+        text-align: center;
+
+        .reg-title {
+            color: $color_white_1;
+            padding-bottom: 10px;
+            font-size: $fs_5;
+            line-height: 1.2;
+            font-weight: $fw_700;
+        }
+
+        ul {
+            background: transparent;
+            margin-bottom: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                list-style: none;
+                color: $color_white_1;
+            }
+
+            .reg-item {
+                a {
+                    color: $color_white_1;
+                    line-height: 1;
+                    transition: all 0.4s;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color_green_1;
+                    }
+                }
+                
+            }
+        }
+    }
+}

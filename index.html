@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>👟 Shoe Store 👟</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font poppin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,400;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ANIMATE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- header - Huệ Anh -->
+    <header class="header-area header-transparent">
+      <div class="main-header d-block d-lg-block">
+        <div class="header-top">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="nav-left col-lg-3">
+                <div class="header-social-link">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+              </div>
+              <div class="nav-right col-lg-9 d-flex justify-content-end">
+                <ul class="user-info-block">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-circle-user"></i>My Account
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-credit-card"></i>Checkout
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./pages/register.html">
+                      <i class="fa-solid fa-right-to-bracket"></i>Sign In
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-main-area sticky">
+          <div class="container">
+            <div class="row align-items-center position-relative">
+              <!-- logo -->
+              <div class="col-auto">
+                <div class="logo">
+                  <a href="./index.html">
+                    <img src="./image/logo.png" alt="Brand Logo" />
+                  </a>
+                </div>
+              </div>
+
+              <!-- main menu -->
+              <div class="col-auto position-static ms-auto">
+                <div class="main-menu-area">
+                  <div class="main-menu">
+                    <nav class="desktop-menu">
+                      <ul>
+                        <!-- Home -->
+                        <li class="active">
+                          <a href="./index.html">Home </a>
+                        </li>
+
+                        <!-- Product -->
+                        <li class="position-static">
+                          <a href="./pages/detail.html"
+                            >Product
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                          <ul class="megamenu dropdown">
+                            <!-- column 01 -->
+                            <li class="mega-title">
+                              <span>Column 01</span>
+                              <ul>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                              </ul>
+                            </li>
+
+                            <!-- column 02 -->
+                            <li class="mega-title">
+                              <span>Column 02</span>
+                              <ul>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                              </ul>
+                            </li>
+
+                            <!-- column 03 -->
+                            <li class="mega-title">
+                              <span>Column 03</span>
+                              <ul>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                                <li>
+                                  <a href="#">Product</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <!-- Sale -->
+                        <li>
+                          <a href="#"
+                            >Service
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                          <ul class="dropdown">
+                            <li>
+                              <a href="#">Sale 1</a>
+                            </li>
+                            <li>
+                              <a href="#">Sale 2</a>
+                            </li>
+                            <li>
+                              <a href="#">Sale 3</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <!-- Blog -->
+                        <li>
+                          <a href="#"
+                            >Blog
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                          <ul class="dropdown">
+                            <li>
+                              <a href="#">Blog 1</a>
+                            </li>
+                            <li>
+                              <a href="#">Blog 2</a>
+                            </li>
+                            <li>
+                              <a href="#">Blog 3</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <!-- Contact Us -->
+                        <li>
+                          <a href="#">Contact Us </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+
+              <!-- mini cart -->
+              <div class="col-auto ms-auto">
+                <div class="header-right">
+                  <div class="header-configure-area">
+                    <ul class="nav">
+                      <li>
+                        <a href="#" class="search-trigger"
+                          ><i class="fa fa-search"></i
+                        ></a>
+                      </li>
+                      <li class="mini-cart-wrap">
+                        <a href="#" class="minicart-btn">
+                          <i class="fa fa-shopping-cart"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <div class="cart-list-wrapper">
+                          <ul class="cart-list">
+                            <li>
+                              <div class="cart-img">
+                                <a href="product-details.html"
+                                  ><img src="./image/cart-1.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="cart-info">
+                                <h6 class="product-name">
+                                  <a href="product-details.html"
+                                    >7th Generation classic</a
+                                  >
+                                </h6>
+                                <span class="cart-qty">Qty: 1</span>
+                                <span class="item-price">$60.00</span>
+                              </div>
+                              <div class="del-icon">
+                                <i class="fa fa-times"></i>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="cart-img">
+                                <a href="product-details.html"
+                                  ><img src="./image/cart-2.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="cart-info">
+                                <h6 class="product-name">
+                                  <a href="product-details.html"
+                                    >Digital 8th generation</a
+                                  >
+                                </h6>
+                                <span class="cart-qty">Qty: 2</span>
+                                <span class="item-price">$70.00</span>
+                              </div>
+                              <div class="del-icon">
+                                <i class="fa fa-times"></i>
+                              </div>
+                            </li>
+                          </ul>
+                          <ul class="minicart-pricing-box">
+                            <li>
+                              <span>Sub-Total</span>
+                              <span><strong>$300.00</strong></span>
+                            </li>
+                            <li>
+                              <span>Eco Tax (-2.00)</span>
+                              <span><strong>$10.00</strong></span>
+                            </li>
+                            <li>
+                              <span>VAT (20%)</span>
+                              <span><strong>$60.00</strong></span>
+                            </li>
+                            <li class="total">
+                              <span>Total</span>
+                              <span><strong>$370.00</strong></span>
+                            </li>
+                          </ul>
+                          <div class="minicart-button">
+                            <a href="cart.html"
+                              ><i class="fa fa-shopping-cart"></i> View Cart</a
+                            >
+                            <a href="cart.html"
+                              ><i class="fa fa-share"></i> Checkout</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- mini cart end -->
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--banner slider - Huệ Anh-->
+      <section class="hero-slider">
+        <div
+          class="hero-slider-active slick-arrow-style slick-arrow-style_hero"
+        >
+          <div class="slick-list">
+            <div class="slick-track">
+              <div class="slick-slide slick-current slick-active">
+                <div>
+                  <div class="hero-single-slide hero-overlay">
+                    <div
+                      class="hero-slider-item bg-img"
+                      style="background-image: url('./image/home2-slide1.jpg')"
+                    >
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div
+                              class="hero-slider-content content-top slide-1"
+                            >
+                              <h2 class="slide-title">New</h2>
+                              <h3 class="slide-subtitle">
+                                Sports Sneakers<br />
+                                <span>Men's like Flex</span>
+                              </h3>
+                              <a href="./pages/detail.html" class="btn btn-large">Shop Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-slide">
+                <div>
+                  <div class="hero-single-slide hero-overlay">
+                    <div
+                      class="hero-slider-item bg-img"
+                      style="background-image: url('./image/home2-slide2.jpg')"
+                    >
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div
+                              class="hero-slider-content content-top slide-2"
+                            >
+                              <h2 class="slide-title">Sale</h2>
+                              <h3 class="slide-subtitle">
+                                Running Sneakers<br />
+                                <span>Men's like Flex</span>
+                              </h3>
+                              <a href="./pages/detail.html" class="btn btn-large">Shop Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- service  - Huệ Anh -->
+      <section class="service">
+        <div class="container">
+          <div class="row row-10">
+            <!-- great value -->
+            <div class="col-12 col-lg-3 col-sm-6">
+              <div class="policy-block text-center">
+                <div class="policy-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="policy-text">
+                  <h4 class="policy-title">Great Value</h4>
+                  <p class="policy-cont">The best value for your buck.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- worldwide delivery -->
+            <div class="col-12 col-lg-3 col-sm-6">
+              <div class="policy-block text-center">
+                <div class="policy-icon">
+                  <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="policy-text">
+                  <h4 class="policy-title">Worldwide Delivery</h4>
+                  <p class="policy-cont">Transforming Miles into Smiles.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Safe Payment -->
+            <div class="col-12 col-lg-3 col-sm-6">
+              <div class="policy-block text-center">
+                <div class="policy-icon">
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="policy-text">
+                  <h4 class="policy-title">Safe Payment</h4>
+                  <p class="policy-cont">Say goodbye to payment worries!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 24/7 help center -->
+            <div class="col-12 col-lg-3 col-sm-6">
+              <div class="policy-block text-center">
+                <div class="policy-icon">
+                  <i class="fa-solid fa-headphones"></i>
+                </div>
+                <div class="policy-text">
+                  <h4 class="policy-title">24/7 Help Center</h4>
+                  <p class="policy-cont">Your satisfaction is our expertise.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner-statistics-top - Huệ Anh -->
+      <div class="banner-statistics-area section-padding">
+        <div class="container">
+          <div
+            class="row banner-grid"
+          >
+            <!-- cot1 -->
+            <div class="col-md-4 col-sm-12">
+              <!-- hinh1 -->
+            <div
+            class="col-md-12 mb-4 banner-item"
+          >
+            <div class="single-category-item">
+              <div class="category-title">
+                <a href="#">MEN</a>
+              </div>
+              <div class="category-thumb">
+                <a href="#">
+                  <img src="./image/category-1.png" class="img-fluid" alt="category thumb" />
+                </a>
+              </div>
+              <div class="shop-collection text-center">
+                <a class="shop-btn" href="shop.html">Shop Collections</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- hinh4 -->
+          <div
+            class="col-md-12 mb-4 banner-item"
+          >
+            <div class="banner-statistics">
+              <a href="#">
+                <img src="./image/cms_3.3.jpg" class="img-fluid" alt="banner thumb" />
+              </a>
+            </div>
+          </div>
+            </div>
+
+            <!-- cot2 -->
+            <div class="col-md-4 col-sm-12">
+              <!-- hinh2 -->
+              <div
+              class="col-md-12 mb-4 banner-item"
+            >
+              <div class="banner-statistics">
+                <a href="#">
+                  <img src="./image/cms_3.1.jpg" class="img-fluid" alt="banner thumb" />
+                </a>
+              </div>
+              </div>
+
+                <!-- hinh5 -->
+              <div
+              class="col-md-12 mb-4 banner-item mt-30"
+            >
+              <div class="single-category-item">
+                <div class="category-title">
+                  <a href="#">MEN</a>
+                </div>
+                <div class="category-thumb">
+                  <a href="#">
+                    <img src="./image/category-2.png" class="img-fluid" alt="category thumb" />
+                  </a>
+                </div>
+                <div class="shop-collection text-center">
+                  <a class="shop-btn" href="#">Shop Collections</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+            <!-- cot3 -->
+            <div class="col-md-4 col-sm-12">
+              <!-- hinh3 -->
+              <div
+              class="col-md-12 mb-4 banner-item"
+            >
+              <div class="single-category-item">
+                <div class="category-title">
+                  <a href="#">MEN</a>
+                </div>
+                <div class="category-thumb">
+                  <a href="#">
+                    <img src="./image/category-3.png" class="img-fluid" alt="category thumb" />
+                  </a>
+                </div>
+                <div class="shop-collection text-center">
+                  <a class="shop-btn" href="#">Shop Collections</a>
+                </div>
+              </div>
+              </div>
+          
+              <!-- hinh6 -->
+              <div
+                class="col-md-12 mb-4 banner-item"
+              >
+                <div class="banner-statistics">
+                  <a href="#">
+                    <img src="./image/cms_3.2.jpg" class="img-fluid" alt="banner thumb" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- product-gallery - Vinh -->
+      <section class="product-gallery">
+        <div class="container">
+          <div class="title_product-gallery">
+            <h2>OUR IN STORE</h2>
+            <p>
+              Investigationes demonstraverunt lectores legere me lius quod ii
+              legunt saepius <br />
+              claritas est etiam processus dynamicus, qui sequitur mutationem.
+            </p>
+          </div>
+          <div class="gallery_product-gallery row">
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner-statistics-bottom start - Huệ Anh -->
+      <div class="banner-statistics-area section-padding-bottom">
+        <div class="container">
+            <div class="row mtn-30">
+                <div class="col-md-6">
+                    <div class="banner-statistics-bottom mt-30">
+                        <a href="#">
+                            <img src="./image/banner_1.2.jpg" alt="banner thumb">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-statistics-bottom mt-30">
+                        <a href="#">
+                            <img src="./image/banner_1.3.jpg" alt="banner thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- banner-statistics-bottom end -->
+
+
+
+      <!-- blog -->
+
+    </main>
+    
+    <!-- footer - Huệ Anh -->
+    <footer>
+      
+      <footer class="black-bg">
+
+        <!-- footer widget start-->
+        <div class="footer-widget-area">
+            <div class="container">
+                <div class="row mtn-30">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget-item mt-30">
+                            <h6 class="widget-title">CUSTOM LINKS</h6>
+                            <ul class="useful-links">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Order Status</a></li>
+                                <li><a href="#">Returns &amp; Exchanges</a></li>
+                                <li><a href="#">Size Guide</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget-item mt-30">
+                            <h6 class="widget-title">PRODUCTS</h6>
+                            <ul class="usefull-links">
+                                <li><a href="#">Prices drop</a></li>
+                                <li><a href="#">New products</a></li>
+                                <li><a href="#">Best sales</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Stores</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget-item mt-30">
+                            <h6 class="widget-title">OUR COMPANY</h6>
+                            <ul class="usefull-links">
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Legal Notice</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Secure payment</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget-item mt-30">
+                            <h6 class="widget-title">YOUR ACCOUNT</h6>
+                            <ul class="usefull-links">
+                                <li><a href="#">Personal info</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Credit slips</a></li>
+                                <li><a href="#">Addresses</a></li>
+                                <li><a href="#">Stores</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer widget end-->
+
+        <!-- footer middle start -->
+        <div class="footer-middle-area">
+            <div class="container">
+                <div class="row mtn-30">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="address-block mt-30">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="./image/logo.png" alt="Brand Logo">
+                                </a>
+                            </div>
+                            <address class="address-info d-flex align-items-center">
+                              <i class="fa-solid fa-location-dot"></i>
+                                <p><span>ADDRESS : </span> Your address goes here</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <address class="address-info email mt-30">
+                            <i class="fa fa-envelope"></i>
+                            <p><span>EMAIL : </span><a href="emailto:demo@examplecom">demo@examplecom</a></p>
+                        </address>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <address class="address-info email mt-30">
+                            <i class="fa fa-phone"></i>
+                            <p><span>PHONE : </span><br><a href="tel:0123456789">0123456789</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer middle end -->
+
+        <!-- footer bottom start -->
+        <div class="footer-bottom-area text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="payment-method-list">
+                            <img src="./image/payment-2 (1).png" alt="payment method">
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">SITE MAP</a>
+                            <a href="#">SEARCH TERMS</a>
+                            <a href="#">ADVANCED SEARCH</a>
+                            <a href="#">ORDERS AND RETURNS</a>
+                            <a href="#">CONTACT US</a>
+                        </div>
+                        <p class="copyright">
+                            </p><p>© 2023 <b class="text-white">Pullman</b> made with <i class="fa fa-heart text-danger"></i></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer bottom end -->
+    </footer>
+    <!-- back to top -->
+    <button onclick="topFunction()" id="movetop" class="movetop" title="Go to top">
+      <span class="fa fa-angle-up"></span>
+    </button>
+              
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+      integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- slick -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    
+    <!-- wow js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+
+        <!-- axios sdn -->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+        integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+  
+      <!-- js -->
+      <script src="./js/index.js"></script>
+      <script src="./js/view.js"></script>
+  </body>
+</html>
